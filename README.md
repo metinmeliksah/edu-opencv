@@ -1,6 +1,6 @@
-# OpenCV ile Görsel Tanıma (.NET Framework 4.7.2)
+# OpenCV ile GÃ¶rsel TanÄ±ma (.NET Framework 4.7.2)
 
-Kısa: Windows Forms tabanlı, ONNX modelleri ile yerel (offline) çalışan görsel sınıflandırma uygulaması.
+KÄ±sa: Windows Forms tabanlÄ±, ONNX modelleri ile yerel (offline) Ã§alÄ±ÅŸan gÃ¶rsel sÄ±nÄ±flandÄ±rma uygulamasÄ±.
 
 Gereksinimler
 - Windows 10/11
@@ -8,7 +8,7 @@ Gereksinimler
 - Visual Studio 2019/2022
 
 Kurulum
-1. Çözümü Visual Studio'da açın: `OpenCV.sln`
+1. Ã‡Ã¶zÃ¼mÃ¼ Visual Studio'da aÃ§Ä±n: `OpenCV.sln`
 2. NuGet paketlerini ekleyin:
    - `OpenCvSharp4`
    - `OpenCvSharp4.runtime.win`
@@ -17,19 +17,17 @@ Kurulum
    Install-Package OpenCvSharp4
    Install-Package OpenCvSharp4.runtime.win
    ```
-3. `Models` klasörüne ONNX modelini kopyalayın (ör. `mobilenetv2-7.onnx`) ve `imagenet_classes.txt` dosyasının bulunduğundan emin olun.
-   - Proje içinde model dosyasını seçip **Build Action = Content** ve **Copy to Output Directory = Copy if newer** ayarlarını yapın.
+3. `Models` klasÃ¶rÃ¼ne ONNX modelini kopyalayÄ±n (Ã¶r. `mobilenetv2-7.onnx`) ve `imagenet_classes.txt` dosyasÄ±nÄ±n bulunduÄŸundan emin olun.
+   - Proje iÃ§inde model dosyasÄ±nÄ± seÃ§ip **Build Action = Content** ve **Copy to Output Directory = Copy if newer** ayarlarÄ±nÄ± yapÄ±n.
 
-Çalıştırma
-1. Visual Studio'da F5 ile başlatın.
-2. "Görsel Yükle" ile bir resim seçin.
-3. "Analiz Et" ile tahmini çalıştırın; Top-5 sonuç MessageBox ile gösterilir.
+Ã‡alÄ±ÅŸtÄ±rma
+1. Visual Studio'da F5 ile baÅŸlatÄ±n.
+2. "GÃ¶rsel YÃ¼kle" ile bir resim seÃ§in.
+3. "Analiz Et" ile tahmini Ã§alÄ±ÅŸtÄ±rÄ±n; Top-5 sonuÃ§ MessageBox ile gÃ¶sterilir.
 
-Kısa notlar
-- Model ve etiket dosyası yoksa uygulama uyarı verir.
-- Büyük modeller CPU üzerinde yavaş çalışabilir; GPU desteği eklenmelidir.
+KÄ±sa notlar
+- Model ve etiket dosyasÄ± yoksa uygulama uyarÄ± verir.
+- BÃ¼yÃ¼k modeller CPU Ã¼zerinde yavaÅŸ Ã§alÄ±ÅŸabilir; GPU desteÄŸi eklenmelidir.
 
 Lisans
-Eğitim amaçlı. Model lisanslarını kontrol edin.
-
-Kısa GitHub açıklaması: "OpenCV ile Görsel Tanıma — Offline ONNX image classifier (Windows Forms, .NET 4.7.2)"
+- Bu proje MIT lisansÄ± altÄ±nda daÄŸÄ±tÄ±lmaktadÄ±r. Detaylar `LICENSE` dosyasÄ±nda bulunmaktadÄ±r.
