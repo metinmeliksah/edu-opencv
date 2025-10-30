@@ -1,0 +1,69 @@
+# Visual Studio / .NET Framework ile uyumlu .gitignore
+# Kýsa: derlenen dosyalar, geçici dosyalar ve büyük binary paketler hariç tutulur.
+
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build outputs
+bin/
+obj/
+
+# Paketler
+packages/
+*.nupkg
+
+# NuGet ve paket kilitleri
+project.lock.json
+project.assets.json
+.nuget/
+
+# Visual Studio Cache
+*.VC.db
+*.VC.opendb
+
+# Test results
+TestResults/
+
+# Logs
+*.log
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# Rider
+.idea/
+
+# Temporary files
+*.tmp
+*.temp
+~$*
+
+# Native/output DLLs (ör. OpenCvSharp runtime native dosyalarý) - derleme sýrasýnda oluþturulur
+**/runtimes/**/native/**
+
+# Büyük model dosyalarý - genellikle repoya eklenmemeli
+Models/*.onnx
+Models/*.pb
+Models/*.tflite
+Models/*.onnx.gz
+
+# Eðer modelleri repoda saklamak istiyorsanýz yukarýdaki satýrlarý kaldýrýn veya yorum satýrý yapýn.
+
+# IDE tarafýndan oluþturulan paket snapshot'larý veya kullanýcýya özel dosyalar
+*.sdf
+*.cache
+
+# Publish çýktý klasörleri
+publish/
+
+# Diðer
+*.bak
+*.old
+
+# Proje spesifik (gerekiyorsa ekleyin)
+# !Models/imagenet_classes.txt    # Bu dosyayý tutmak isterseniz baþýndaki # kaldýrýn
