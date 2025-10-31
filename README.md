@@ -1,4 +1,4 @@
-# OpenCV ile Görsel Tanıma (.NET Framework 4.7.2)
+# OpenCV ile Nesne Tanıma (.NET Framework 4.7.2)
 
 Kısa: Windows Forms tabanlı, ONNX modelleri ile yerel (offline) çalışan görsel sınıflandırma uygulaması.
 
